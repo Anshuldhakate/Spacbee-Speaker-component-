@@ -2,6 +2,9 @@
 
 This is a simple **Featured Speakers Carousel Web Application** that showcases key speakers for an event. Users can click on a speaker card to view detailed information, which will appear above the carousel. The carousel allows smooth navigation between the speaker cards using next and previous arrows.
 
+## Deployed link -
+https://gregarious-pasca-32e194.netlify.app/
+
 
 <img width="923" alt="Screenshot 2024-10-26 165240" src="https://github.com/user-attachments/assets/7472eeb1-7e6d-4311-89dd-391c136c6f97">
 
