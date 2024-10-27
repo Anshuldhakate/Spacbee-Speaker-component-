@@ -1,0 +1,255 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+  
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Metropolis', sans-serif;
+}
+  
+  .featured-speakers {
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 4px 10px 24px 0px #0000001A;
+
+  }
+
+  
+  
+  .featured-speakers h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+  }
+  
+  .featured-speakers p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .featured-speakers a {
+    color: #3a7bd5;
+    text-decoration: none;
+  }
+  
+  .carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .speakers-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    margin: 30px 10px;
+    padding: 20px 0;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .speaker-card {
+    text-align: center;
+    min-width: 150px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .speaker-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  
+  .carousel-arrow {
+    position: absolute;
+    width: 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border: 1px solid black;
+    border-radius: 100%;
+  }
+  
+  .prev-arrow {
+    left: 10px;
+  }
+  
+  .next-arrow {
+    right: 10px;
+  }
+  
+  .program-button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .program-button:hover {
+    background-color: #155ab2;
+  }
+  
+  .program-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+
+  
+  .detailed-view {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 89%;
+    margin: auto;
+    height: 150px;
+  }
+  
+  .detailed-view.visible {
+    display: flex;
+  }
+  
+  .detailed-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .detailed-info {
+    text-align: start;
+    width: 40%  ;
+    margin-left: 20px;
+  }
+
+  .para .extra-info{
+    text-align: start;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  
+  #detailed-img{
+    border-radius: 100%;
+    margin-left: 30px;
+  }
+
+  .detailed-content img{
+      width: 100px;
+      height:100px;
+      
+  }
+
+
+
+  /* Tablets and Small Screens */
+@media (max-width: 768px) {
+  .featured-speakers h1 {
+    font-size: 28px;
+  }
+
+  .featured-speakers p {
+    font-size: 16px;
+  }
+
+  .speakers-carousel {
+    gap: 10px; /* Reduce space between cards */
+  }
+
+  .speaker-card {
+    padding: 20px;
+    flex: 0 0 120px; /* Make cards smaller */
+  }
+
+  .carousel-arrow {
+    width: 35px;
+    height: 35px;
+  }
+
+  .detailed-view {
+    height: auto;
+    padding: 10px;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start;
+  }
+
+  .detailed-info {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .featured-speakers h1 {
+    font-size: 24px;
+  }
+
+  .featured-speakers p {
+    font-size: 14px;
+  }
+
+  .speaker-card {
+    flex: 0 0 100px;
+    padding: 15px;
+  }
+
+  .carousel-arrow {
+    font-size: 18px;
+  }
+
+  .detailed-content img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #detailed-img {
+    margin-left: 0; /* Remove left margin for better alignment */
+  }
+}
